@@ -20,7 +20,7 @@ class CreateCarsTable extends Migration
             $table->string('img');
             $table->string('carName');
             $table->unsignedBigInteger('owner_id');
-            $table->string('status');
+            $table->string('status')->nullable();
             $table->foreign('owner_id')->references('owner_id')->on('companies');
             $table->timestamps();
         });

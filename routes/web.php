@@ -38,10 +38,10 @@ Route::get('/detail/{id}', 'RenterController@detail')->name('detail');
 
 
 // -----
-//haya section
+Route::resource('posts','CarController');
 
 
-
+Route::get('/sort', 'CarController@sort')->name('sort');
 
 // -----
 
