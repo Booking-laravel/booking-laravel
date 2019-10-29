@@ -69,7 +69,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'role' => 'company'
+            'role' => 'renter'
         ]);
         $allCompanies= User::where('email',$data['email'])->where('role','company')->get();
 //        dd($allCompanies);

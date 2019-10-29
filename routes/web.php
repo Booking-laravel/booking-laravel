@@ -21,6 +21,20 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // Deyaa section:
 
+Route::get('/homecompany', 'CompanyController@index')->name('homeCompany');
+Route::get('/homecompany/create', 'CompanyController@create')->name('create');
+Route::post('/homecompany/createcar', 'CompanyController@createcar')->name('create.car');
+Route::get('/companyrequests', 'CompanyController@requests')->name('company.requests');
+Route::put('/acceptrequest', 'CompanyController@acceptrequest')->name('company.accept.request');
+Route::get('/companyprofile', 'CompanyController@profile')->name('company.profile');
+
+
+Route::get('/homerenter', 'RenterController@index')->name('homeRenter');
+Route::get('/booking/{id}', 'RenterController@booking')->name('booking');
+Route::post('/bookingDetails', 'RenterController@bookingDetails')->name('booking.details');
+Route::get('/renterprofile', 'RenterController@profile')->name('company.profile');
+Route::get('/detail/{id}', 'RenterController@detail')->name('detail');
+
 
 
 // -----
