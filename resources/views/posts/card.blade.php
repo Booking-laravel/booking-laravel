@@ -11,6 +11,8 @@
 @extends('layouts.app')
 
 @section('content')
+
+
 <form action="{{ route('sort') }}" method="GET">
     <div class="w-25">
         <select onchange="changeCarsTypes()" id="brand" name="brand" class="form-control" focus>

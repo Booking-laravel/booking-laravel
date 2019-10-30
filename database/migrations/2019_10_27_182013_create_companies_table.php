@@ -19,7 +19,7 @@ class CreateCompaniesTable extends Migration
             $table->unsignedBigInteger('owner_id');
 //            $table->string('carDetail')->nullable();
             $table->primary('owner_id');
-            $table->foreign('owner_id')->references('id')->on('users');
+            $table->foreign('owner_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

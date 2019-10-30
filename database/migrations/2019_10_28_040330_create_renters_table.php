@@ -19,7 +19,7 @@ class CreateRentersTable extends Migration
 //            $table->string('phone',10)->nullable();
             $table->unsignedBigInteger('renter_id');
             $table->primary('renter_id');
-            $table->foreign('renter_id')->references('id')->on('users');
+            $table->foreign('renter_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

@@ -22,8 +22,8 @@ class CreateReservationsTable extends Migration
             $table->unsignedBigInteger('renter_id')->default(null);
 //            $table->unsignedBigInteger('owner_id');
 //            $table->foreign('owner_id')->references('owner_id')->on('companies');
-            $table->foreign('renter_id')->references('renter_id')->on('renters');
-            $table->foreign('car_id')->references('id')->on('cars');
+            $table->foreign('renter_id')->references('renter_id')->on('renters')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('car_id')->references('id')->on('cars')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

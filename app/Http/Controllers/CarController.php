@@ -123,7 +123,15 @@ elseif($request->input('model') !== 'All Model'){
        return view('posts.card',compact('cards'));
    }
 
+    public function destroy($id)
+    {
 
+//        $tasks=Car::where ('id',$id)->delete();
+//        $tasks=$this->destroy($id);
+        Car::destroy($id);
+        return redirect()->route('posts.index');
+//        return $id;
+    }
 
 
 }
