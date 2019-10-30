@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63db9042-3685-4472-8729-71b1681d35c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CarController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_27_182013_create_companies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_27_182013_create_companies_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_28_040330_create_renters_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_28_040330_create_renters_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_28_043551_create_cars_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_28_043551_create_cars_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_28_081741_create_reservations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_28_081741_create_reservations_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/companies/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/companies/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/companies/requests.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/companies/requests.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/card.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="63db9042-3685-4472-8729-71b1681d35c0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +148,7 @@
       <workItem from="1572319756898" duration="5869000" />
       <workItem from="1572329817595" duration="10000000" />
       <workItem from="1572349073869" duration="42000" />
-      <workItem from="1572349271701" duration="28904000" />
+      <workItem from="1572349271701" duration="29574000" />
     </task>
     <servers />
   </component>
