@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63db9042-3685-4472-8729-71b1681d35c0" name="Default Changelist" comment="" />
+    <list default="true" id="63db9042-3685-4472-8729-71b1681d35c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/card.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +150,7 @@
       <workItem from="1572319756898" duration="5869000" />
       <workItem from="1572329817595" duration="10000000" />
       <workItem from="1572349073869" duration="42000" />
-      <workItem from="1572349271701" duration="29574000" />
+      <workItem from="1572349271701" duration="30205000" />
     </task>
     <servers />
   </component>
