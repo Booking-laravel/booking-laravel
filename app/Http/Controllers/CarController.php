@@ -103,27 +103,29 @@ class CarController extends Controller
 
 public function sort(Request $request){
     $brand = $request->input('brand');
-//        dd($brand);
-
     if($request->input($brand) !== 'All Cars'){
            $sortBy = $request->input($brand);
-//           dd($sortBy);
            $cards = Car::where('carName', $sortBy)->get();
-//        dd($brand);
-
+    }elseif ($request->input('brand') !== 'All Brands'){
+        $sortBy = $request->input('brand');
+        $cards = Car::where('brand', $sortBy)->get();
     }
-elseif ($request->input('brand') !== 'All Brands'){
-           $sortBy = $request->input('brand');
-           $cards = Car::where('brand', $sortBy)->get();
-       }
-elseif($request->input('model') !== 'All Model'){
-           $sortBy = $request->input('model');
-           $cards = Car::where('model', $sortBy)->get();
-       }
+    if($request->input('model') !== 'All Model'){
+        $sortBy = $request->input('model');
+        $cards = Car::where('model', $sortBy)->get();
+    }
        return view('posts.card',compact('cards'));
    }
 
+    public function destroy($id)
+    {
 
+//        $tasks=Car::where ('id',$id)->delete();
+//        $tasks=$this->destroy($id);
+        Car::destroy($id);
+        return redirect()->route('posts.index');
+//        return $id;
+    }
 
 
 }

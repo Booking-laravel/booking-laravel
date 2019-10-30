@@ -11,6 +11,8 @@
 @extends('layouts.app')
 
 @section('content')
+
+
 <form action="{{ route('sort') }}" method="GET">
     <div class="w-25">
         <select onchange="changeCarsTypes()" id="brand" name="brand" class="form-control" focus>
@@ -20,7 +22,7 @@
             <option name="Mercides" > Mercides </option>
             <option name="BMW" > BMW </option>
         </select>
-        <div id="Toyota" style="display: none">
+        <div id="Toyota" class="carName" style="display: none">
             <select id="carName" name="Toyota" class="form-control" focus>
                 <option >All Cars</option>
                 <?php
@@ -31,7 +33,7 @@
                 @endforeach
             </select>
         </div>
-        <div id="Ford" style="display: none">
+        <div id="Ford" class="carName" style="display: none">
             <select id="carName" name="Ford" class="form-control" focus>
                 <option >All Cars</option>
                 <?php
@@ -42,7 +44,7 @@
                 @endforeach
             </select>
         </div>
-        <div id="BMW" style="display: none">
+        <div id="BMW" class="carName" style="display: none">
             <select id="carName" name="BMW" class="form-control" focus>
                 <option >All Cars</option>
                 <?php
@@ -53,7 +55,7 @@
                 @endforeach
             </select>
         </div>
-        <div id="Mercides" style="display: none">
+        <div id="Mercides" class="carName" style="display: none">
             <select id="carName" name="Mercides" class="form-control" focus>
                 <option >All Cars</option>
                 <?php
@@ -117,7 +119,15 @@
 <script>
     function changeCarsTypes() {
         let sellected = document.getElementById('brand').value
-        let brandList = document.getElementById(sellected).style.display = "block"
+        for (let i = 0; i <= 3; i++) {
+
+            if(document.getElementsByClassName('carName')[i].id === sellected){
+                document.getElementById(sellected).style.display = "block"
+            }
+            else{
+                document.getElementsByClassName('carName')[i].style.display = "none"
+            }
+        }
     }
 </script>
 

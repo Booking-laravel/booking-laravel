@@ -21,7 +21,7 @@ class CreateCarsTable extends Migration
             $table->string('carName');
             $table->unsignedBigInteger('owner_id');
             $table->string('status')->nullable();
-            $table->foreign('owner_id')->references('owner_id')->on('companies');
+            $table->foreign('owner_id')->references('owner_id')->on('companies')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
