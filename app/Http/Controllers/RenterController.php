@@ -55,7 +55,7 @@ class RenterController extends Controller
                 'car_id' => $request->input('car_id'),
                 'renter_id' => $user_id,
             ]);
-            return "Reservation Completed";
+            return view('renters.completeRes') ;
 //            return view('renters.book', compact('car'));
         }
         else
@@ -84,7 +84,6 @@ class RenterController extends Controller
 //        dd($request);
         $user_id = Auth::id();
         $user = Renter::find($user_id);
-
 //        return $car;
         if($user){
             $car = Car::find($car_id);

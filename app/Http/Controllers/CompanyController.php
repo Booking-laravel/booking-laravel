@@ -114,6 +114,11 @@ class CompanyController extends Controller
         else
             return "Please Login as Company!";
     }
+    public  function delete($id){
+        Company::destroy($id);
+        return "deleted";
+
+    }
 
 
 

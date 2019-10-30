@@ -60,6 +60,11 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
+                        <select  name ="role" class="browser-default custom-select">
+                            <option selected value="{{'role'}}">....</option>
+                            <option value="company">company</option>
+                            <option value="renter">renter</option>
+                        </select>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
